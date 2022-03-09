@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_prod_cat_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_margin="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageview_prod_cat"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:contentDescription="@string/prod_cat"
+
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/textview_prod_cat_desc"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:autoSizePresetSizes="@array/autosize_text_tight1"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                app:autoSizeTextType="uniform"
+                android:textAlignment="center"
+                android:text="@string/app_title"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

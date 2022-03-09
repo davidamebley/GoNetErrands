@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="somame.amebleysystems.com.somame.ProductDetailActivity">
+
+    <item
+        android:id="@+id/action_product_detail_goto_basket"
+        android:orderInCategory="100"
+        android:title="@string/view_basket"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_product_basket"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/action_product_detail_add_wishlist"
+        android:orderInCategory="200"
+        android:title="@string/add_to_wish_list"
+        android:icon="@drawable/ic_wish_list_outline"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/action_product_detail_share"
+        android:orderInCategory="300"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/action_product_detail_view_wish_list"
+        android:orderInCategory="400"
+        android:title="@string/view_wish_list"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/action_product_detail_my_orders"
+        android:orderInCategory="500"
+        android:title="@string/my_orders"
+        app:showAsAction=""
+        android:icon="@drawable/ic_time"
+        tools:ignore="AppCompatResource"
+        />
+    <item
+        android:id="@+id/action_product_detail_my_account"
+        android:orderInCategory="600"
+        android:title="@string/settings"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/action_product_detail_sign_out"
+        android:orderInCategory="700"
+        android:title="@string/sign_out"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+</menu>

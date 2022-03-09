@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMyVioletPrimary"
+    tools:context="somame.amebleysystems.com.somame.Splash">
+
+    <LinearLayout
+        android:id="@+id/progress_layout"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        >
+
+        <ProgressBar
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/AppTheme2"
+            android:id="@+id/progress_splash"
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleLarge"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/circular_progress_bg"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_splash_title"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/splash_title_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_title"
+            android:textColor="@android:color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textColor="@android:color/primary_text_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/splash_title_sub1"
+            android:text="@string/app_subtitle"
+            android:layout_marginBottom="50dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

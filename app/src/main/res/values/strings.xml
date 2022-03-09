@@ -1,0 +1,306 @@
+<resources>
+    <string name="app_name">GoNet Errands</string>
+    <string name="app_title">GoNet</string>
+    <string name="app_subtitle">Errand Services</string>
+    <string name="app_subtitle2">We run your errands and deliver to your doorstep&#8230;</string>
+    <string name="continue_button1">Continue</string>
+    <string name="sign_in_button_main">Sign in</string>
+    <string name="sign_up_button_main">Sign up</string>
+    <string name="sign_up_for_app">Sign up for GoNet!</string>
+    <string name="hint_firstname">First name</string>
+    <string name="hint_lastname">Last name</string>
+    <string name="hint_email">Your active email address</string>
+    <string name="hint_password">Create a password</string>
+    <string name="hint_password_confirm">Confirm your password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="sign_in_instead">Sign in</string>
+    <string name="sign_in_to_explore">Sign in to Explore</string>
+    <string name="sign_up_instead">Sign up instead</string>
+    <string name="forgot_password">I forgot my password</string>
+    <string name="don_t_have_an_account_sign_up_now">Don\'t have an account? Sign up</string>
+    <string name="reset_my_password">Reset my password</string>
+    <string name="send_me_a_password_reset_code_to_my">Send a password reset code to my</string>
+    <string name="send_reset_code">Send Reset Code</string>
+    <string name="enter_phone">Enter Phone</string>
+    <string name="enter_resetcode_screen">Enter Reset Code Screen</string>
+    <string name="forgot_password_title1">I forgot my password</string>
+    <string name="we_sent_a_password_reset_code_to">We sent a password reset code to</string>
+    <string name="reset_phone_text">(233) 12 345 6789</string>
+    <string name="verification_code">Verification code</string>
+    <string name="reset_code_hint">123456</string>
+    <string name="next">NEXT</string>
+    <string name="prev"><![CDATA[<]]></string>
+    <string name="previous">Previous</string>
+    <string name="change_pass">Change Password</string>
+    <string name="hi">Hi,</string>
+    <string name="new_password">New Password</string>
+    <string name="success">Success!</string>
+    <string name="reset_pass_warning">(Note: Make sure the phone number or email address you enter is what you have already provided in your account.)</string>
+    <string name="user1_1">User1 1</string>
+    <string name="todo">TODO</string>
+    <string name="user_email_com">user@email.com</string>
+    <string name="my_account">My Account</string>
+    <string name="my_account_button_hint">Edit your account information</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="wallet_button_hint">Fund wallet or withdraw from wallet</string>
+    <string name="my_basket">My Basket</string>
+    <string name="my_basket_button_hint">Check basket for added items</string>
+    <string name="app_settings">Settings</string>
+    <string name="settings_button_hint">Configure your app settings</string>
+    <string name="how_it_is_done">How it is done</string>
+    <string name="how_it_is_done_button_hint">How to perform basic activities</string>
+    <string name="about_us">About Us</string>
+    <string name="about_us_button_hint">More about GoNet Errand Services</string>
+    <string name="faqs">FAQs</string>
+    <string name="faqs_button_hint">Frequently asked questions</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sign_out_button_hint">Sign out</string>
+
+    <string-array name="forgot_password">
+        <item name="phone">Phone</item>
+        <item name="email">Email</item>
+    </string-array>
+    <string-array name="payment_method">
+        <item name="mobile_money">Mobile money</item>
+    </string-array>
+    <string-array name="delivery_period">
+        <item name="same_day">Same day</item>
+        <item name="next_day">Next day</item>
+        <item name="two_days_after">2 days after</item>
+        <item name="three_days_after">3 days after</item>
+        <item name="four_days_after">4 days after</item>
+        <item name="five_days_after">5 days after</item>
+        <item name="six_days_after">6 days after</item>
+        <item name="a_week_after">A week after</item>
+    </string-array>
+    <string-array name="pickup_item_type">
+        <item name="document">Document</item>
+        <item name="food">Food</item>
+        <item name="others">Others</item>
+    </string-array>
+    <string-array name="gender">
+        <item name="phone">Male</item>
+        <item name="email">Female</item>
+    </string-array>
+
+    <string-array name="options_dummy">
+        <item name="option1">Option 1</item>
+        <item name="option2">Option 2</item>
+        <item name="option3">Option 3</item>
+        <item name="option4">Option 4</item>
+    </string-array>
+
+    <array name="autosize_text_sizes">
+        <item>8sp</item>
+        <item>12sp</item>
+        <item>18sp</item>
+        <item>24sp</item>
+        <item>25sp</item>
+        <item>36sp</item>
+        <item>48sp</item>
+    </array>
+
+    <array name="autosize_text_sizes2">
+        <item>7sp</item>
+        <item>8sp</item>
+        <item>9sp</item>
+        <item>10sp</item>
+        <item>11sp</item>
+        <item>12sp</item>
+    </array>
+    <array name="autosize_text_tight1">
+        <item>12sp</item>
+        <item>14sp</item>
+        <item>16sp</item>
+    </array>
+
+    <array name="autosize_text_tight2">
+        <item>12sp</item>
+        <item>14sp</item>
+        <item>16sp</item>
+        <item>18sp</item>
+        <item>20sp</item>
+    </array>
+
+    <array name="autosize_text_tight3">
+        <item>16sp</item>
+        <item>18sp</item>
+        <item>20sp</item>
+        <item>22sp</item>
+    </array>
+
+    <array name="autosize_text_sizes21">
+        <item>8sp</item>
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>16sp</item>
+        <item>20sp</item>
+        <item>24sp</item>
+        <item>28sp</item>
+    </array>
+    <string name="title_activity_main_menu2">MainMenu2</string>
+    <string name="prod_cat">prod_cat</string>
+    <string name="go_back">Go back</string>
+    <string name="select_restaurant_location">Select Restaurant Location</string>
+    <string name="start_time_dummy">6am</string>
+    <string name="start_end_time_dummy">6am - 10pm</string>
+    <string name="restaurant_name_dummy">Restaurant</string>
+    <string name="restaurant_image">restaurant image</string>
+    <string name="restaurant_menu_item_dummy">Restaurant Menu Item</string>
+    <string name="restaurant_submenu_item_dummy">Restaurant Submenu Item</string>
+    <string name="dash_separator">-</string>
+    <string name="closing_time_dummy">10pm</string>
+    <string name="restaurant_food">food</string>
+    <string name="dummy_price">00</string>
+    <string name="dummy_submenu">Submenu</string>
+    <string name="description">Description</string>
+    <string name="food_image">Food Image</string>
+    <string name="share">Share</string>
+    <string name="open_cart">Open Cart</string>
+    <string name="view_basket">Open Basket</string>
+    <string name="additional_comments_or_allergies">Your special requests or allergies</string>
+    <string name="none">None</string>
+    <string name="enter_here">Enter here…</string>
+    <string name="delivery">Delivery</string>
+    <string name="pick_up">Pick-up</string>
+    <string name="dine_in">Dine-in</string>
+    <string name="product_subcategory_item">Product Subcategory Item</string>
+    <string name="category">Category</string>
+    <string name="search">Search…</string>
+    <string name="product_image">Product Image</string>
+    <string name="product">Product</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="manufacturer_">Manufacturer:</string>
+    <string name="add_to_basket">Add to basket</string>
+    <string name="update_basket_item">Update item</string>
+    <string name="your_special_requests_or_preferences">Your special requests or preferences</string>
+    <string name="product_details">Product Details</string>
+    <string name="sort_by">Sort by</string>
+    <string name="all">All</string>
+    <string name="a_to_z">A to Z</string>
+    <string name="z_to_a">Z to A</string>
+    <string name="lowest_price">Lowest Price</string>
+    <string name="highest_price">Highest Price</string>
+    <string name="price">Price:\u0020 </string>
+    <string name="qty">\u0020x </string>
+    <string name="product_basket">Product Basket</string>
+    <string name="basket_summary">Basket Summary</string>
+    <string name="total">Total</string>
+    <string name="transportation">Transportation</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="checkout">Checkout</string>
+    <string name="wish_list">Wish list</string>
+    <string name="add_to_wish_list">Add to wish list</string>
+    <string name="view_wish_list">View Wish List</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="confirm_email_address">Confirm email address</string>
+    <string name="repeat_email">Repeat Email</string>
+    <string name="error_invalid_password">Password length must be 6 or more</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_email">Email is not valid</string>
+    <string name="error_mismatch_email">Your emails do not match</string>
+    <string name="error_invalid_phone">Enter a 10-digit valid phone number</string>
+    <string name="error_mismatch_password">Both passwords must match</string>
+    <string name="agent_code_opt">Agent code (Optional)</string>
+    <string name="agent_code">Agent code</string>
+    <string name="sign_up_as_an_agent">Sign up as an agent</string>
+    <string name="terms_of_service">Terms of Service.</string>
+    <string name="by_signing_up_you_agree_to_our">By signing up, you agree to our</string>
+    <string name="agent_earn_text1">Earn as an agent by recommending GoNet to others.</string>
+    <string name="become_an_agent">Become an Agent</string>
+    <string name="repeat_mobile_number">Repeat mobile number</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="dob_selected">yyyy/mm/dd</string>
+    <string name="select_date">Select Date</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="address">Your Address</string>
+    <string name="calendar">calendar</string>
+    <string name="error_age_invalid">Your age is not valid</string>
+    <string name="error_age_below">An agent can only be 18 years or above</string>
+    <string name="error_age_below_13">Check the age value entered</string>
+    <string name="_6_digit_code">6-digit code</string>
+    <string name="one_more_step">One More Step!</string>
+    <string name="sms_verification_code_instruction">Enter the SMS verification code that was sent to the phone number you provided.</string>
+    <string name="verify">Verify</string>
+    <string name="didn_t_receive_code_after_some_minutes">Didn\'t receive code or code expired?</string>
+    <string name="resend">Resend</string>
+    <string name="verify_success">Verification successful!</string>
+    <string name="you_can_now">You can now</string>
+    <string name="sign_in">sign in</string>
+    <string name="textView_agent_sign_in_title">Agent Sign In</string>
+    <string name="email_or_phone">Email or phone</string>
+    <string name="sign_in_as_an_agent">Sign in as an agent</string>
+    <string name="seconds_until_resend">Seconds until resend:</string>
+    <string name="dummy_zero_zero">00</string>
+    <string name="my_earnings">My Earnings</string>
+    <string name="my_referrals">My Referrals</string>
+    <string name="agent_dummy">GoNet Agent</string>
+    <string name="last_earning">Last earning</string>
+    <string name="latest_referral">Latest referral</string>
+    <string name="no_of_referrals">No. of referrals</string>
+    <string name="total_earning">Total earning</string>
+    <string name="active_referrals">Active referrals</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="tap_to_add">(tap to add)</string>
+    <string name="setup_account">Account Setup</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone">Phone</string>
+    <string name="_address">Address</string>
+    <string name="add">Add</string>
+    <string name="delivery_location">Delivery Location</string>
+    <string name="gh_post_gps_address">Gh Post GPS Address</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="user_acc_setup">User Account Setup</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="address_delivery_details">Address &amp; Delivery Details</string>
+    <string name="save">Save</string>
+    <string name="dummy_password">******</string>
+    <string name="hint_current_password">Enter your current password</string>
+    <string name="delivery_location_or">Delivery Location (or nearest location)</string>
+    <string name="dummy_one">1</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="momo_number">Mobile money number</string>
+    <string name="proceed">Proceed</string>
+    <string name="service_charge">Service charge</string>
+    <string name="items">Items</string>
+    <string name="pick_a_category">Pick a category</string>
+    <string name="grocery_supermarket">Grocery ~ Supermarket</string>
+    <string name="restaurant_fast_food"><![CDATA[Restaurant & Fast food]]></string>
+    <string name="pickup_service">Pickup service</string>
+    <string name="item_details">Item Details</string>
+    <string name="type_of_item">Type of Item</string>
+    <string name="others_specify">Others (Specify)</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="pickup_point_gps">Pickup Point GPS Address</string>
+    <string name="pickup_point_address">Pickup Point Address</string>
+    <string name="pickup_point_contact">Pickup Point Contact Number</string>
+    <string name="delivery_period">Delivery Period</string>
+    <string name="slash_separator">/</string>
+    <string name="customer">Customer</string>
+    <string name="order_no">Order#</string>
+    <string name="no_of_items">No. of Items</string>
+    <string name="complete_payment">Complete payment</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="payment_status">Payment status</string>
+    <string name="order_status">Order status</string>
+    <string name="my_orders">My Orders</string>
+    <string name="restaurant_basket_item">Restaurant Basket Item</string>
+    <string name="restaurant_basket"><![CDATA[Restaurant & Fastfood Basket]]></string>
+    <string name="please_wait">Please wait</string>
+    <string name="item">Item</string>
+    <string name="quantity">Qty</string>
+    <string name="processing">Processing…</string>
+    <string name="clear_basket">Clear basket</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="agent_home">Agent Home</string>
+    <string name="agent_earning">Agent Earning</string>
+    <string name="settings">Settings</string>
+</resources>

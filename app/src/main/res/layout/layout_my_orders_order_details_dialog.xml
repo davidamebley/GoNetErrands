@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#3d455b"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:fillViewport="true"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        android:padding="4dp"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <!--<HorizontalScrollView
+            android:id="@+id/horizontal_scroll_view_order_detail_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true"
+            >-->
+            <RelativeLayout
+                android:id="@+id/layout_order_detail_dialog"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="2dp"
+                android:fillViewport="true"
+                >
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontal_scroll_view_order_detail_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:fillViewport="true"
+                    android:fitsSystemWindows="true"
+                    >
+                <TableLayout
+                    android:id="@+id/table_layout_order_detail_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:gravity="center_horizontal"
+                    android:scrollbars="horizontal">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:text="@string/customer"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/dialog_textView_my_order_details_customer_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_marginStart="8dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:text="@string/order_no"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/dialog_textView_my_order_details_order_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_marginStart="8dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:text="@string/delivery_location"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/dialog_textView_my_order_details_delivery_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_marginStart="8dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <!--<TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:padding="2dp"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:text="@string/delivery_location"
+                            android:textColor="@android:color/white"
+                            />
+                        <TextView
+                            android:id="@+id/dialog_textView_my_order_details_delivery_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:padding="2dp"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            />
+                    </TableRow>-->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:text="@string/delivery_period"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/dialog_textView_my_order_details_delivery_period"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_marginStart="8dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:text="@string/total"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/dialog_textView_my_order_details_order_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_marginStart="8dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <!--<TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:padding="2dp"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:text="@string/total"
+                            android:textColor="@android:color/white"
+                            />
+                        <TextView
+                            android:id="@+id/dialog_textView_my_order_details_order_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:padding="2dp"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            />
+                    </TableRow>-->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:text="@string/payment_status"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/dialog_textView_my_order_details_payment_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_marginStart="8dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:text="@string/order_status"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/dialog_textView_my_order_details_order_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_marginStart="8dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <!--<TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:padding="2dp"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:text="@string/order_status"
+                            android:textColor="@android:color/white"
+                            />
+                        <TextView
+                            android:id="@+id/dialog_textView_my_order_details_order_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:padding="2dp"
+                            android:layout_margin="2dp"
+                            android:lineSpacingMultiplier="1"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            />
+                    </TableRow>-->
+                </TableLayout>
+            </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/view_order_detail_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorGrayL"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_below="@id/horizontal_scroll_view_order_detail_dialog"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll2_view_order_detail_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:fillViewport="true"
+                android:fitsSystemWindows="true"
+                android:layout_below="@id/view_order_detail_dialog"
+                >
+                <TableLayout
+                    android:id="@+id/table_layout2_order_detail_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_marginStart="8dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:text="@string/item"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_marginStart="8dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:text="@string/quantity"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_marginStart="8dp"
+                            android:lineSpacingMultiplier="1"
+                            android:padding="2dp"
+                            android:scrollbars="vertical"
+                            android:text="@string/unit_price"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+            </RelativeLayout>
+        <!--</HorizontalScrollView>-->
+</ScrollView>
+</LinearLayout>

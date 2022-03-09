@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="somame.amebleysystems.com.somame.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:id="@+id/layout_main_title">
+        <androidx.appcompat.widget.AppCompatTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_title_main"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/app_title"
+            android:textColor="@color/colorMyVioletPrimary"
+            android:shadowColor="@android:color/black"
+            app:autoSizeTextType="uniform"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_title_sub1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="5dp"
+            app:autoSizeTextType="uniform"
+            app:autoSizePresetSizes="@array/autosize_text_sizes2"
+            android:text="@string/app_subtitle"
+            android:textColorHighlight="@color/colorMyVioletLight"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_main_subtitle2"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_title_sub2"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="100dp"
+            app:autoSizeTextType="uniform"
+            app:autoSizePresetSizes="@array/autosize_text_sizes21"
+            android:text="@string/app_subtitle2"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_main_button">
+
+        <Button
+            android:id="@+id/continue_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold"
+            android:text="@string/continue_button1"
+            android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+            android:background="@drawable/button_roundedge"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:drawablePadding="5dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

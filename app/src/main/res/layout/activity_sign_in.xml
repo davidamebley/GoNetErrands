@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="somame.amebleysystems.com.somame.SignInActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppTheme2.NoActionBar"
+        app:popupTheme="@style/AppTheme2.PopupOverlay"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/white"
+        app:subtitleTextColor="@android:color/white"
+        />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="28dp"
+    android:paddingTop="28dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_sign_in_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:shadowColor="@android:color/black"
+            android:text="@string/sign_in_to_explore"
+            android:textColor="@color/colorRed"
+            android:textColorHighlight="@color/colorMyVioletLight"
+            android:textStyle="italic"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            app:autoSizeTextType="uniform"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layout_sign_in_edittext">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:gravity="start"
+            android:labelFor="@id/edittext_sign_in_email"
+            android:shadowColor="@android:color/darker_gray"
+            android:text="@string/email"
+            android:textColor="@android:color/black"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            app:autoSizeTextType="uniform"
+            />
+
+        <EditText
+            android:id="@+id/edittext_sign_in_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edittext_roundedge"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/appCompatTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:labelFor="@id/edittext_sign_in_password"
+            android:shadowColor="@android:color/darker_gray"
+            android:text="@string/password"
+            android:textColor="@android:color/black"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            app:autoSizeTextType="uniform"
+            />
+
+        <EditText
+            android:id="@+id/edittext_sign_in_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edittext_roundedge"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_lock_open_black_24dp"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp"
+            />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:theme="@style/AppTheme"
+            android:id="@+id/progress_sign_in"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:visibility="gone"
+            />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="28dp"
+        android:id="@+id/layout_sign_in_buttons">
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/button_sign_in_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:drawablePadding="10dp"
+            app:floating_background_color="@color/colorMyVioletDark"
+            app:floating_icon="@drawable/ic_action_sign_in"
+            app:floating_title="@string/continue_button1"
+            app:floating_title_color="@android:color/white"
+            >
+
+        </ru.dimorinny.floatingtextbutton.FloatingTextButton>
+
+        <TextView
+            android:id="@+id/textview_sign_up_instead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/don_t_have_an_account_sign_up_now"
+            android:textColor="@color/colorRedL"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:id="@+id/textview_forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="@string/forgot_password"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:id="@+id/textview_sign_in_sign_in_as_agent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/sign_in_as_an_agent"
+            android:textColor="@color/colorMyVioletDark"
+            android:textStyle="italic"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

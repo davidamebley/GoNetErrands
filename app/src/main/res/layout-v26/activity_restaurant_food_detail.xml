@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_restaurant_food_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="somame.amebleysystems.com.somame.RestaurantFoodDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_restaurant_food_detail"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_constraintDimensionRatio="h,4:6"
+        android:theme="@style/AppTheme2.AppBarOverlay"
+        >
+
+        <com.google.android.material.appbar.SubtitleCollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar_restaurant_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            android:fitsSystemWindows="true"
+            app:expandedSubtitleTextAppearance="@style/TextAppearance.AppCompat"
+            app:expandedTitleMarginTop="0dp"
+            app:expandedTitleMarginBottom="22dp"
+            app:expandedTitleMarginStart="15dp"
+            app:expandedTitleGravity="bottom|start"
+            android:animateLayoutChanges="true"
+            >
+
+            <ImageView
+                android:id="@+id/imageview_restaurant_food_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY"
+                app:layout_collapseMode="parallax"
+                android:contentDescription="@string/food_image"
+                android:src="@drawable/bg_app_main_menu_header_bg"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_restaurant_food_detail"
+                app:title="Food Name"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme2.PopupOverlay"
+                android:theme="@style/AppTheme2.NoActionBar"
+                app:layout_collapseMode="pin"
+                app:subtitle="@string/user_email_com"
+                app:layout_scrollFlags="scroll|enterAlways"
+                />
+
+            <!--</com.google.android.material.appbar.SubtitleCollapsingToolbarLayout>-->
+        </com.google.android.material.appbar.SubtitleCollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_restaurant_food_detail_add"
+        android:src="@drawable/ic_basket_add"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="8dp"
+        app:fabSize="normal"
+        android:scaleType="centerCrop"
+        app:layout_anchor="@id/appBar_restaurant_food_detail"
+        app:layout_anchorGravity="bottom|end"
+        android:clickable="true"
+        android:focusable="true"
+        android:tooltipText="@string/add_to_basket"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView_restaurant_food_detail"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="20dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    >
+                    <LinearLayout
+                        android:id="@+id/layout_price_restaurant_food_detail"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginStart="2dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/textview_restaurant_food_detail_food_price"
+                            android:textStyle="bold"
+                            android:layout_width="0dp"
+                            android:layout_weight="9"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:textColor="@color/colorPrimary"
+                            app:autoSizePresetSizes="@array/autosize_text_tight3"
+                            android:layout_gravity="center_horizontal|start"
+                            android:gravity="center_horizontal|start"
+                            app:autoSizeTextType="uniform"
+                            android:textAlignment="textStart"
+                            android:text="@string/dummy_price"
+                            android:layout_marginBottom="4dp"
+                            android:visibility="visible"
+                            />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/number_button_restaurant_food_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_margin="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:paddingBottom="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            app:backGroundColor="@color/colorPrimary"
+                            app:textColor="@android:color/white"
+                            app:finalNumber="100"
+                            app:initialNumber="1"
+                            app:textSize="6sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="1dp"
+                        android:scrollbars="horizontal">
+                        <!--<RadioGroup
+                            android:id="@+id/radio_group_restau_food_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:textAlignment="textStart"
+                            android:scrollbars="horizontal"
+                            android:paddingStart="6dp"
+                            android:paddingEnd="1dp"
+                            android:layout_margin="2dp"
+                            >
+                            <RadioButton
+                                android:id="@+id/radio_delivery_restau_food_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/delivery"
+                                android:onClick="radioClick"
+                                android:layout_marginEnd="4dp"
+                                android:checked="true"
+                                />
+                            <RadioButton
+                                android:id="@+id/radio_pickup_restau_food_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pick_up"
+                                android:onClick="radioClick"
+                                android:layout_marginEnd="4dp"
+                                />
+                            <RadioButton
+                                android:id="@+id/radio_dine-in_restau_food_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dine_in"
+                                android:onClick="radioClick"
+                                android:layout_marginEnd="4dp"
+                                />
+
+                        </RadioGroup>-->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="2dp"
+                        android:text="@string/description"
+                        android:textColor="@color/colorMyVioletDark"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/textview_restaurant_food_detail_food_desc"
+                        android:layout_marginTop="4dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="2dp"
+                        android:text="@string/none"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                    <TextView
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="@string/additional_comments_or_allergies"
+                        android:textColor="@color/colorMyVioletDark"
+                        android:layout_marginTop="4dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="2dp"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_restaurant_food_detail_comments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="8dp"
+                            android:gravity="center_vertical|end"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="2dp">
+                            <TextView
+                                android:lineSpacingMultiplier="1.5"
+                                android:text="@string/tap_to_add"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="4dp"
+                                android:paddingBottom="2dp"
+                                android:textSize="14sp"
+                                android:textStyle="italic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        <ImageView
+                            android:id="@+id/imageView_restaurant_food_detail_comments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_margin="8dp"
+                            android:layout_gravity="end|center_vertical"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_insert_comment" />
+                        </LinearLayout>
+                    </LinearLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <androidx.appcompat.widget.AppCompatTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/textview_restaurant_food_detail_comment_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/additional_comments_or_allergies"
+                            android:textColor="@color/colorMyVioletDark"
+                            android:layout_marginTop="4dp"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="4dp"
+                            android:paddingBottom="2dp"
+                            app:autoSizePresetSizes="@array/autosize_text_tight1"
+                            app:autoSizeTextType="uniform"
+                            android:textAlignment="textStart"
+                            />
+                        <LinearLayout
+                            android:id="@+id/layout_restaurant_food_detail_comments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="8dp"
+                            android:gravity="center_vertical|end"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="2dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="4dp"
+                                android:text="@string/tap_to_add"
+                                android:textStyle="italic"
+                                app:autoSizePresetSizes="@array/autosize_text_tight1"
+                                app:autoSizeTextType="uniform"
+                                android:textAlignment="textEnd"
+                                />
+                            <ImageView
+                                android:id="@+id/imageView_restaurant_food_detail_comments"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="2dp"
+                                android:layout_gravity="end|center_vertical"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/ic_insert_comment" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/textview_restaurant_food_detail_comment"
+                        android:layout_marginTop="2dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="2dp"
+                        android:text="@string/none"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

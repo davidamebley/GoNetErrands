@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="somame.amebleysystems.com.somame.ProductCatActivity">
+    <item
+        android:id="@+id/action_main_menu_view_basket"
+        android:orderInCategory="100"
+        android:title="@string/view_basket"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_product_basket"
+        tools:ignore="AppCompatResource"
+        />
+
+    <item
+        android:id="@+id/action_main_menu_share"
+        android:orderInCategory="200"
+        android:title="@string/share"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_share"
+        tools:ignore="AppCompatResource"
+        />
+
+    <item
+        android:id="@+id/action_main_menu_view_wish_list"
+        android:orderInCategory="300"
+        android:title="@string/view_wish_list"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_wish_list_outline_dark"
+        tools:ignore="AppCompatResource"
+        />
+    <item
+        android:id="@+id/action_main_menu_my_orders"
+        android:orderInCategory="400"
+        android:title="@string/my_orders"
+        app:showAsAction=""
+        android:icon="@drawable/ic_time"
+        tools:ignore="AppCompatResource"
+        />
+    <item
+        android:id="@+id/action_main_menu_my_account"
+        android:orderInCategory="500"
+        android:title="@string/settings"
+        app:showAsAction=""
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        tools:ignore="AppCompatResource"
+        />
+    <item
+        android:id="@+id/action_main_menu_sign_out"
+        android:orderInCategory="600"
+        android:title="@string/sign_out"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_arrow_left_black_48dp"
+        tools:ignore="AppCompatResource"
+        />
+</menu>

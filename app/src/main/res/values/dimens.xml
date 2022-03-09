@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="fab_margin">16dp</dimen>
+    <!--<dimen name="design_fab_image_size" tools:override="true">36dp</dimen>-->
+    <dimen name="dialog_margin">20dp</dimen>
+    <dimen name="dialog_padding">12dp</dimen>
+    <dimen name="action_bar_size2">?android:attr/actionBarSize</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+</resources>

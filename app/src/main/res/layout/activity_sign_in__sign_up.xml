@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="5dp"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context="somame.amebleysystems.com.somame.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/signin_up_title_main"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@android:color/black"
+        android:text="@string/app_title"
+        android:textColor="@color/colorMyVioletPrimary"
+        android:textStyle="bold"
+        app:autoSizePresetSizes="@array/autosize_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/signin_up_title_sub1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_subtitle"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@color/colorMyVioletLight"
+        android:textStyle="italic"
+        app:autoSizePresetSizes="@array/autosize_text_sizes2"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_up_title_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+    <ru.dimorinny.floatingtextbutton.FloatingTextButton
+        android:id="@+id/signin_up_sign_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:drawablePadding="10dp"
+        app:floating_background_color="@color/colorMyVioletDark"
+        app:floating_icon="@drawable/ic_action_person_add"
+        app:floating_title="@string/sign_up_button_main"
+        app:floating_title_color="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/signin_up_sign_in_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_up_title_sub1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ru.dimorinny.floatingtextbutton.FloatingTextButton
+        android:id="@+id/signin_up_sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:drawablePadding="10dp"
+        app:floating_background_color="@color/colorPrimary"
+        app:floating_icon="@drawable/ic_action_sign_in"
+        app:floating_title="@string/sign_in_button_main"
+        app:floating_title_color="@android:color/white"
+        />
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

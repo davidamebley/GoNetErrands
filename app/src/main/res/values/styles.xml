@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Custom application theme. -->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMyVioletPrimary</item>
+        <item name="colorPrimaryDark">@color/colorMyVioletDark</item>
+        <item name="colorAccent">@color/colorMyVioletLight</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <!--<item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>-->
+        <item name="android:navigationBarColor">@color/colorMyVioletPrimary</item>
+    </style>
+    <!-- Custom application theme. -->
+    <style name="AppTheme2NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMyVioletPrimary</item>
+        <item name="colorPrimaryDark">@color/colorMyVioletDark</item>
+        <item name="colorAccent">@color/colorMyVioletLight</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <!--<item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>-->
+        <item name="android:navigationBarColor">@color/colorMyVioletPrimary</item>
+    </style>
+    <!-- Custom application theme. -->
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMyVioletPrimary</item>
+        <item name="colorPrimaryDark">@color/colorMyVioletDark</item>
+        <item name="colorAccent">@color/colorMyVioletLight</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <!--<item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>-->
+        <item name="android:navigationBarColor">@color/colorMyVioletPrimary</item>
+    </style>
+    <!-- Custom application theme. -->
+    <style name="AppThemeSplash" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMyVioletPrimary</item>
+        <item name="colorPrimaryDark">@color/colorMyVioletDark</item>
+        <item name="colorAccent">@color/colorMyVioletLight</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <!-- res/values/styles.xml -->
+    <!-- your theme inherits from the material theme -->
+    <style name="AppThemeMaterial" parent="android:Theme.Material">
+        <!-- theme customizations -->
+    </style>
+
+    <style name="AppTheme2.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.Holo.Light.PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@android:style/Widget.Holo.Light.ListView.DropDown</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:editTextColor">@android:color/white</item>
+        <!--<item name="android:editTextBackground">@android:color/white</item>-->
+        <item name="android:textColorHint">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme2.NoActionBar2" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme2.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main_my_orders"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="somame.amebleysystems.com.somame.MyOrdersActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_my_orders"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme2.AppBarOverlay"
+        app:layout_constraintDimensionRatio="h,4:6"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_my_orders"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme2.NoActionBar"
+            app:popupTheme="@style/AppTheme2.PopupOverlay"
+            app:title="@string/app_name"
+            app:titleTextColor="@android:color/white"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:theme="@style/AppTheme"
+        android:id="@+id/progress_my_orders"
+        app:layout_anchorGravity="center"
+        app:layout_anchor="@id/layout_main_menu2_root"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:id="@+id/linear_my_orders_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_my_orders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

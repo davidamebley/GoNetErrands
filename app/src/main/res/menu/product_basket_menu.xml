@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="somame.amebleysystems.com.somame.ProductBasketActivity">
+
+    <item
+        android:id="@+id/action_product_basket_share"
+        android:orderInCategory="100"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/action_product_basket_clear"
+        android:orderInCategory="200"
+        android:title="@string/clear_basket"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/action_product_basket_my_account"
+        android:orderInCategory="300"
+        android:title="@string/settings"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/action_product_basket_sign_out"
+        android:orderInCategory="400"
+        android:title="@string/sign_out"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+</menu>

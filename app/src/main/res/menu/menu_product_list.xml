@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_product_list_search"
+        android:title="@string/search"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_action_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+    <item
+        android:id="@+id/action_product_list_sort"
+        android:title="@string/sort_by"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_action_swap"
+        app:showAsAction="ifRoom|collapseActionView"
+        />
+    <item
+        android:id="@+id/action_product_list_goto_basket"
+        android:orderInCategory="300"
+        android:title="@string/view_basket"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_product_basket"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/action_product_list_share"
+        android:orderInCategory="400"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource" />
+</menu>

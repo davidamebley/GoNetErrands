@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_agent_earnings"
+            android:icon="@drawable/ic_money"
+            android:iconTint="@android:color/white"
+            android:title="@string/my_earnings" />
+
+        <item
+            android:id="@+id/nav_agent_referrals"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/my_referrals" />
+
+        <item
+            android:id="@+id/nav_agent_account"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/settings" />
+
+        <item
+            android:id="@+id/nav_agent_sign_out"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/sign_out" />
+
+    </group>
+
+</menu>

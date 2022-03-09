@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="somame.amebleysystems.com.somame.RestaurantFoodDetailActivity">
+
+    <item
+        android:id="@+id/action_restaurant_food_detail_share"
+        android:orderInCategory="100"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/action_restaurant_food_detail_goto_basket"
+        android:orderInCategory="200"
+        android:title="@string/view_basket"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_product_basket"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/action_restaurant_food_detail_my_account"
+        android:orderInCategory="300"
+        android:title="@string/settings"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/action_restaurant_food_detail_sign_out"
+        android:orderInCategory="400"
+        android:title="@string/sign_out"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+</menu>

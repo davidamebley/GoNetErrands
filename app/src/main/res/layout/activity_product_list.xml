@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_product"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="somame.amebleysystems.com.somame.ProductListActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_product"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme2.AppBarOverlay"
+        app:layout_constraintDimensionRatio="h,4:6"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_product"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme2.NoActionBar"
+            app:popupTheme="@style/AppTheme2.PopupOverlay"
+            app:title="@string/app_name"
+            app:titleTextColor="@android:color/white"
+            app:subtitleTextColor="@android:color/darker_gray"
+            />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/textview_product_top_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:autoSizePresetSizes="@array/autosize_text_tight1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            app:autoSizeTextType="uniform"
+            android:textAlignment="center"
+            android:text="@string/product"
+            android:layout_marginBottom="4dp"
+            android:visibility="visible"
+            />
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:theme="@style/AppTheme"
+            android:id="@+id/progress_product"
+            app:layout_anchorGravity="center"
+            app:layout_anchor="@id/layout_product"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:visibility="gone"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

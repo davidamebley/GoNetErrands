@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="270"
+        android:endColor="@color/colorMyVioletLight"
+        android:startColor="@color/colorRedL"/>
+</shape><!--#E8F5E9-->
+    <!--#B2DFDB-->
+    <!--#7987f4-->
+    <!--android:startColor="#ef0d18"-->
+    <!--android:endColor="#8245f4"-->

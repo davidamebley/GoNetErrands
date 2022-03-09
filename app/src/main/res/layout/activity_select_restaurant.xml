@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_select_restaurant_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="somame.amebleysystems.com.somame.SelectRestaurantActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_select_restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme2.AppBarOverlay"
+        app:layout_constraintDimensionRatio="h,4:6"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_select_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme2.NoActionBar"
+            app:popupTheme="@style/AppTheme2.PopupOverlay"
+            app:title="@string/app_name"
+
+            app:titleTextColor="@android:color/white"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:theme="@style/AppTheme"
+        android:id="@+id/progress_select_restaurant"
+        app:layout_anchorGravity="center"
+        app:layout_anchor="@id/layout_select_restaurant_root"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_select_restaurant_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp">
+            <!--<androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_select_restaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoSizePresetSizes="@array/autosize_text_tight3"
+                android:layout_gravity="start"
+                app:autoSizeTextType="uniform"
+                android:textAlignment="textStart"
+                android:text="@string/select_restaurant_location"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="2dp"
+                android:textStyle="italic"
+                android:textColor="@color/colorMyVioletPrimary"
+                android:ellipsize="end"
+                />-->
+            <!--<androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="1dp"
+                app:cardElevation="1dp"
+                >
+                <Spinner
+                    android:id="@+id/spinner_select_restaurant"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="1dp"
+                    android:layout_marginBottom="2dp"
+                    />
+            </androidx.cardview.widget.CardView>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrayL"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="2dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_select_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            />
+</LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="somame.amebleysystems.com.somame">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".SignInActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".VerifyResetCodeActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".PasswordChangeSuccessActivity" />
+        <activity
+            android:name=".MainMenu2"
+            android:label="@string/title_activity_main_menu2"
+            android:theme="@style/AppTheme2.NoActionBar" />
+        <activity
+            android:name=".ProductCatActivity"
+            android:label="@string/title_activity_main_menu2"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".SelectRestaurantActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".RestaurantMenuActivity"
+            android:theme="@style/AppTheme2.NoActionBar2" />
+        <activity
+            android:name=".RestaurantSubmenuActivity"
+            android:theme="@style/AppTheme2.NoActionBar2" />
+        <activity
+            android:name=".RestaurantFoodDetailActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".ProductSubCatActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".ProductListActivity"
+            android:theme="@style/AppTheme2.NoActionBar" />
+        <activity
+            android:name=".ProductDetailActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".ProductBasketActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".ProductWishListActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".ProductDetailUpdateActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".AgentMainActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".AgentSignUpActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".AgentVerifyActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".VerifySuccessActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".AgentSignInActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".AgentHomeActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".AgentEarningActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".UserAccountDetailsSetupActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".CheckOutActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".MainCategoryActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".PickupServiceActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".PaymentActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".MyOrdersActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".RestaurantBasketActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+        <activity
+            android:name=".RestaurantFoodDetailUpdateActivity"
+            android:theme="@style/AppTheme2NoActionBar" />
+    </application>
+
+</manifest>

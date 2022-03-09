@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="somame.amebleysystems.com.somame.PaymentActivity">
+
+    <!--<item
+        android:id="@+id/action_payment_prev"
+        android:orderInCategory="100"
+        android:title="@string/previous"
+        android:icon="@drawable/ic_prev_white"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />-->
+
+    <item
+        android:id="@+id/action_payment_share"
+        android:orderInCategory="100"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource" />
+
+
+    <item
+        android:id="@+id/action_payment_my_orders"
+        android:orderInCategory="200"
+        android:title="@string/my_orders"
+        android:icon="@drawable/ic_time"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+
+
+    <item
+        android:id="@+id/action_payment_my_account"
+        android:orderInCategory="300"
+        android:title="@string/settings"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/action_payment_sign_out"
+        android:orderInCategory="400"
+        android:title="@string/sign_out"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+</menu>
